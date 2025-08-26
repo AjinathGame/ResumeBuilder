@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="../styles/resume.css">
+</head>
+
+<body>
+    <div class="sidebar">
+    <h2>PROFILE</h2>
+    <div class="input-box">
+      <label>Name</label>
+      <input type="text" placeholder="Ajinath Game">
+    </div>
+    <div class="input-box">
+      <label>Role/Title</label>
+      <input type="text" placeholder="Front-End Developer">
+    </div>
+    <div class="input-box">
+      <label>Email</label>
+      <input type="email" placeholder="you@example.com">
+    </div>
+    <div class="input-box">
+      <label>Phone</label>
+      <input type="text" placeholder="+91 98765 43210">
+    </div>
+    <div class="input-box">
+      <label>Location</label>
+      <input type="text" placeholder="Pune, India">
+    </div>
+    <div class="input-box">
+      <label>Website / Portfolio</label>
+      <input type="url" placeholder="https://your-portfolio.com">
+    </div>
+    <div class="input-box">
+      <label>Professional Summary</label>
+      <textarea placeholder="2–3 lines describing your experience and impact..."></textarea>
+    </div>
+
+    <h2>SKILLS</h2>
+    <div class="input-box">
+      <input type="text" placeholder="e.g., HTML, CSS, JavaScript, React...">
+    </div>
+    <h2>EDUCATION</h2>
+    <div class="input-box">
+      <label>Degree</label>
+      <input type="text" placeholder="e.g., B.Sc. in Computer Science">
+    </div>
+    <div class="input-box">
+      <label>Institution</label>
+      <input type="text" placeholder="e.g., XYZ University">
+    </div>
+    <div class="input-box">
+      <label>Year of Graduation</label>
+      <input type="text" placeholder="e.g., 2020">
+    </div>
+
+    <h2>EXPERIENCE</h2>
+    <div class="input-box">
+        <label>Job Title</label>
+        <input type="text" placeholder="e.g., Front-End Developer">
+    </div>
+    <div class="input-box">
+        <label>Company Name</label>
+        <input type="text" placeholder="e.g., ABC Corp">
+    </div>
+    <div class="input-box">
+        <label>Start Date - End Date</label>
+        <input type="text" placeholder="e.g., Jan 2020 - Present">
+    </div>
+    <div class="input-box">
+        <label>Description</label>
+        <textarea placeholder="Describe your responsibilities and achievements..."></textarea>
+    </div>
+
+    
+    <h2>PROJECTS</h2>
+    <div class="input-box" style="display: flex; gap: 10px; flex-direction: column;">
+        <label>Project Name</label>
+        <input type="text" placeholder="e.g., Portfolio Website">
+        <label>Project URL</label>
+        <input type="url" placeholder="Project URL">
+        <label>Description</label>
+        <textarea placeholder="Description (one per line)"></textarea>
+    </div>
+    <button class="generate-btn">Generate Resume</button>
+  </div>
+    <script src="../scripts/resume.js"></script>
+</body>
+
+</html>
