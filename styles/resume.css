@@ -1,96 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
 body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0d1b2a;
-      color: #fff;
-      display: flex;
-    }
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0d1b2a;
+  color: #fff;
+  display: flex;
+}
 
-    .sidebar {
-      width: 320px;
-      height: 100vh;
-      background-color: #1b263b;
-      padding: 20px;
-      overflow-y: auto;
-    }
-    .sidebar::-webkit-scrollbar{
-      display: none;
-    }
+.sidebar {
+  width: 320px;
+  height: 140vh;
+  background-color: #1b263b;
+  padding: 20px;
+  overflow-y: auto;
+}
 
-    .sidebar h2 {
-      font-size: 18px;
-      margin-bottom: 15px;
-      color: #90e0ef;
-    }
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
 
-    .input-box {
-      margin-bottom: 15px;
-      margin-right: 15px;
-    }
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #90e0ef;
+}
 
-    .input-box label {
-      display: block;
-      font-size: 14px;
-      margin-bottom: 5px;
-      color: #adb5bd;
-    }
+.input-box {
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
 
-    .input-box input, 
-    .input-box textarea {
-      width: 100%;
-      padding: 8px;
-      height: 25px;
-      border-radius: 8px;
-      border: none;
-      outline: none;
-      background: #0d1b2a;
-      color: #fff;
-    }
+.input-box label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #adb5bd;
+}
 
-    textarea {
-      resize: none;
-      height: 170px;
-    }
+.input-box input,
+.input-box textarea {
+  width: 100%;
+  padding: 8px;
+  height: 25px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #0d1b2a;
+  color: #fff;
+}
 
-    .skills, .projects {
-      margin-top: 20px;
-    }
+textarea {
+  resize: none;
+  height: 170px;
+}
 
-    .add-btn {
-      background: #0d1b2a;
-      color: #90e0ef;
-      border: 1px solid #90e0ef;
-      padding: 10px;
-      border-radius: 8px;
-      cursor: pointer;
-      margin-bottom: 10px;
-      width: 100%;
-      text-align: center;
-    }
+.skills,
+.projects {
+  margin-top: 20px;
+}
 
-    .add-btn:hover {
-      background: #90e0ef;
-      color: #0d1b2a;
-    }
+.add-btn {
+  background: #0d1b2a;
+  color: #90e0ef;
+  border: 1px solid #90e0ef;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
 
-    .project-item {
-      background: #0d1b2a;
-      padding: 10px;
-      border-radius: 8px;
-      margin-bottom: 10px;
-    }
+.add-btn:hover {
+  background: #90e0ef;
+  color: #0d1b2a;
+}
 
-    .project-item input {
-      margin-bottom: 5px;
-    }
-    .generate-btn {
-      background: #0d1b2a;
-      color: #90e0ef;
-      border: 1px solid #90e0ef;
-      padding: 10px;
-      border-radius: 8px;
-      cursor: pointer;
-      margin-top: 10px;
-      width: 100%;
-      text-align: center;
-    }
+.project-item {
+  background: #0d1b2a;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.project-item input {
+  margin-bottom: 5px;
+}
+
+.generate-btn {
+  background: #0d1b2a;
+  color: #90e0ef;
+  border: 1px solid #90e0ef;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.resume-preview {
+  background-color: white;
+  height: 1108px;
+  width: 595px;
+  margin: auto;
+
+  padding: 20px;
+  color: black;
+  position: relative;
+
+
+}
+
+.resume-name {
+  max-width: 100%;
+
+}
+
+.resume-name h3 {
+  margin-top: 0;
+  color: rgb(46, 42, 42);
+  font-size: 3rem;
+  text-align: center;
+}
+
+.user-info {
+
+  width: 100vw;
+  display: flex;
+  position: absolute;
+  margin: auto;
+  align-items: center;
+  top: 130px;
+  margin-left: 10%;
+  gap: 20px;
+}
+
+hr {
+  border: 1px solid #90e0ef;
+  margin: 20px 0;
+
+}
+
+#user-info-divider {
+  margin-top: 50px;
+}
+
+.user-info p {
+  margin: 5px 0;
+
+}
+
+.summary {
+  margin-top: 20px;
+  width: 90%;
+  color: rgb(46, 42, 42);
+}
+
+.summary h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.summary p {
+  margin: 5px 0;
+  color: rgb(109, 104, 104);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.skills {
+  margin-top: 20px;
+  width: 90%;
+  color: rgb(46, 42, 42);
+
+}
+
+.skills h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.skills p {
+  margin: 5px 0;
+  color: rgb(109, 104, 104);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  line-height: 29px;
+  font-size: 0.9rem;
+  word-break: break-word;
+  white-space: pre-wrap;
+
+}
+
+.education,
+.experience {
+  margin-top: 20px;
+  width: 90%;
+  color: rgb(46, 42, 42);
+}
+
+.education p {
+  margin: 5px 0;
+  color: rgb(109, 104, 104);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  line-height: 29px;
+  font-size: 0.9rem;
+  word-break: break-word;
+  white-space: pre-wrap;
+
+}
+
+.experience p {
+  margin: 5px 0;
+  color: rgb(109, 104, 104);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  line-height: 29px;
+  font-size: 0.9rem;
+  word-break: break-word;
+  white-space: pre-wrap;
+
+}
+
+.projects {
+  margin-top: 20px;
+  width: 90%;
+  color: rgb(46, 42, 42);
+}
+
+.projects p {
+  margin: 5px 0;
+  color: rgb(109, 104, 104);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  line-height: 34px;
+  font-size: 0.9rem;
+  word-break: break-word;
+  white-space: pre-wrap;
+
+
+}
+
+#resume-divider {
+  position: absolute;
+  bottom: 1%;
+  left: 0;
+  right: 0;
+  width: 95%;
+  margin: auto;
+  background-color: #90e0ef;
+}

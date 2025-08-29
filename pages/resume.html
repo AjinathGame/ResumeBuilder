@@ -2,93 +2,133 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Builder</title>
-    <link rel="stylesheet" href="../styles/resume.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="../styles/resume.css">
+    
 </head>
 
 <body>
-    <div class="sidebar">
+  <div class="sidebar">
     <h2>PROFILE</h2>
     <div class="input-box">
       <label>Name</label>
-      <input type="text" placeholder="Ajinath Game">
+      <input type="text" placeholder="Ajinath Game" id="input-name">
     </div>
     <div class="input-box">
       <label>Role/Title</label>
-      <input type="text" placeholder="Front-End Developer">
+      <input type="text" placeholder="Front-End Developer" id="input-role">
     </div>
     <div class="input-box">
       <label>Email</label>
-      <input type="email" placeholder="you@example.com">
+      <input type="email" placeholder="you@example.com" id="input-email">
     </div>
     <div class="input-box">
       <label>Phone</label>
-      <input type="text" placeholder="+91 98765 43210">
+      <input type="text" placeholder="+91 98765 43210" id="input-phone">
     </div>
     <div class="input-box">
       <label>Location</label>
-      <input type="text" placeholder="Pune, India">
+      <input type="text" placeholder="Pune, India" id="input-location">
     </div>
     <div class="input-box">
       <label>Website / Portfolio</label>
-      <input type="url" placeholder="https://your-portfolio.com">
+      <input type="url" placeholder="https://your-portfolio.com" id="input-website">
     </div>
     <div class="input-box">
       <label>Professional Summary</label>
-      <textarea placeholder="2–3 lines describing your experience and impact..."></textarea>
+      <textarea placeholder="2–3 lines describing your experience and impact..." id="input-summary"></textarea>
     </div>
 
     <h2>SKILLS</h2>
     <div class="input-box">
-      <input type="text" placeholder="e.g., HTML, CSS, JavaScript, React...">
+      <textarea placeholder="e.g., HTML, CSS, JavaScript, React..." id="input-skills"></textarea>
     </div>
     <h2>EDUCATION</h2>
     <div class="input-box">
       <label>Degree</label>
-      <input type="text" placeholder="e.g., B.Sc. in Computer Science">
+      <input type="text" placeholder="e.g., B.Sc. in Computer Science" id="input-degree">
     </div>
     <div class="input-box">
       <label>Institution</label>
-      <input type="text" placeholder="e.g., XYZ University">
+      <input type="text" placeholder="e.g., XYZ University" id="input-institution">
     </div>
     <div class="input-box">
       <label>Year of Graduation</label>
-      <input type="text" placeholder="e.g., 2020">
+      <input type="text" placeholder="e.g., 2020" id="input-year">
     </div>
 
     <h2>EXPERIENCE</h2>
     <div class="input-box">
-        <label>Job Title</label>
-        <input type="text" placeholder="e.g., Front-End Developer">
+      <label>Job Title</label>
+      <input type="text" placeholder="e.g., Front-End Developer" id="input-job-title">
     </div>
     <div class="input-box">
-        <label>Company Name</label>
-        <input type="text" placeholder="e.g., ABC Corp">
+      <label>Company Name</label>
+      <input type="text" placeholder="e.g., ABC Corp" id="input-company">
     </div>
     <div class="input-box">
-        <label>Start Date - End Date</label>
-        <input type="text" placeholder="e.g., Jan 2020 - Present">
+      <label>Start Date - End Date</label>
+      <input type="text" placeholder="e.g., Jan 2020 - Present" id="input-dates">
     </div>
     <div class="input-box">
-        <label>Description</label>
-        <textarea placeholder="Describe your responsibilities and achievements..."></textarea>
+      <label>Description</label>
+      <textarea placeholder="Describe your responsibilities and achievements..." id="input-description"></textarea>
     </div>
 
-    
+
     <h2>PROJECTS</h2>
     <div class="input-box" style="display: flex; gap: 10px; flex-direction: column;">
-        <label>Project Name</label>
-        <input type="text" placeholder="e.g., Portfolio Website">
-        <label>Project URL</label>
-        <input type="url" placeholder="Project URL">
-        <label>Description</label>
-        <textarea placeholder="Description (one per line)"></textarea>
+      <label>Project Name</label>
+      <input type="text" placeholder="e.g., Portfolio Website" id="input-project-name">
+      <label>Project URL</label>
+      <input type="url" placeholder="Project URL" id="input-project-url">
+      <label>Description</label>
+      <textarea placeholder="Description (one per line)" id="input-project-description"></textarea>
     </div>
-    <button class="generate-btn">Generate Resume</button>
+    <button class="generate-btn" id="generate-btn">Generate Resume</button>
   </div>
-    <script src="../scripts/resume.js"></script>
+  <div class="resume-preview" id="resume-preview">
+     <hr>
+    <div class="resume-name">
+     <h3 id="name">Name</h3>
+    </div>
+    <div class="user-info">
+     <p id="email">ex. you@example.com</p> | <p id="phone">ex. +91 98765 43210</p> | <p id="location">ex. Pune, India</p> 
+    </div>
+    <hr id="user-info-divider">
+    <div class="summary">
+      <h2> Summary</h2>
+      <p id="summary">ex. A passionate developer with experience in building responsive web applications.</p>
+    </div>
+    <div class="skills">
+      <h2>Skills</h2>
+      <p id="skills">ex. HTML<br>CSS<br>JavaScript<br>React</p>
+    </div>
+    <div class="education">
+      <h2>Education</h2>
+      <p id="degree">ex. B.Sc. in Computer Science</p>
+      <p id="institution">ex. XYZ University</p>
+      <p id="year">ex. 2020</p>
+    </div>
+    <div class="experience">
+      <h2>Experience</h2>
+      <p id="job-title">ex. Front-End Developer</p>
+      <p id="company">ex. ABC Corp</p>
+      <p id="dates">ex. Jan 2020 - Present</p>
+      <p id="description">ex. Developed and maintained web applications using HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="projects">
+      <h2>Projects</h2>
+      <p id="project-name">ex. Portfolio Website</p>
+      <p id="project-url">ex. https://your-portfolio.com</p>
+      <p id="project-description">ex. A website showcasing my work.</p>
+    </div>
+    <hr id="resume-divider">
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+  <script src="../scripts/resume.js"></script>
 </body>
 
 </html>
